@@ -23,15 +23,14 @@ body{
 
 header{
     display: flex;
-    justify-content: flex-end;
-    flex-shrink: 0;
+    justify-content: flex-end;   
 }
 
 header p{
     padding: 7px 8px;
-    background-color: grey;
-    border-radius: 8px;
-    margin: 10px 10px;
+    background-color: rgb(74, 74, 74);
+    border-radius: 6px;
+    margin: 8px 8px;
     font-size: 18px;
 }
 
@@ -72,7 +71,49 @@ main{
 /* Navbar */
 
 Nav{
-    height: 120px;
-    background-color: gray;
-    flex-shrink: 0;
+    height: 150px;
+    background-color: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-nav, .mid-nav, .right-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-item{
+    text-align: center;
+    height: 100%;
+    font-size: 30px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
+.nav-item > i{
+    font-size: 35px;
+}
+
+.nav-item > span{
+    font-size: 17px;
+    padding-top: 10px;
+}
+
+.fa-share-square{
+    color: rgb(75, 200, 0);
+}
+
+.right-nav{
+    background-color: rgb(74, 74, 74);
+    height: 100%;
+    padding: 0 30px;
+    color: red;
 }
