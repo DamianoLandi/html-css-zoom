@@ -13,7 +13,10 @@ body{
 }
 
 .container{
-    max-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
 }
 
 /* Header */
@@ -21,6 +24,7 @@ body{
 header{
     display: flex;
     justify-content: flex-end;
+    flex-shrink: 0;
 }
 
 header p{
@@ -34,4 +38,41 @@ header p{
 header p .fa-arrows-alt{
     transform: rotate(45deg);
     font-size: 20px;
+}
+
+/* Main */
+
+main{
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.bg-img{
+    height: 200px;
+    width: 350px;
+    background-image: url(https://picsum.photos/id//200/300);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.info{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 5px;
+    width: 40%;
+    font-size: 18px;
+}
+
+/* Navbar */
+
+Nav{
+    height: 120px;
+    background-color: gray;
+    flex-shrink: 0;
 }
